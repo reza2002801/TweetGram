@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane onMouseClicked="#goToCategorySurface" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #282A35; -fx-background-radius: 15 15 15 15;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CategoriesComponentController">
+   <children>
+      <Label fx:id="CategoryNamelbl" layoutX="27.0" layoutY="17.0" text="CategoryName :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Userslbl" layoutX="26.0" layoutY="54.0" prefWidth="200.0" text="Users :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="646.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ChangePersonalInfoTabController">
+   <children>
+      <Circle fx:id="CPIprofileFrame" fill="#282a35" layoutX="126.0" layoutY="122.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="26.0" layoutY="243.0" mnemonicParsing="false" onAction="#changeProfilePicture" prefHeight="0.0" prefWidth="200.0" style="-fx-background-color: #282A35;" text="ChangeProfilePicture" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="212.0" layoutY="32.0" prefHeight="21.0" prefWidth="652.0" text="________________________________________">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="257.0" layoutY="152.0" opacity="0.99" prefHeight="420.0" prefWidth="563.0" style="-fx-background-color: #282a35; -fx-background-radius: 10;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="145.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="281.0" minWidth="10.0" prefWidth="281.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="125.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="96.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="CPIbiotxt" focusTraversable="false" prefHeight="34.0" prefWidth="219.0" promptText="Enter Bio" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="41.0" prefWidth="147.0" text="Bio" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="CPIemailtxt" promptText="Enter Email" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="CPIfirstNametxt" promptText="Enter FirstName" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="CPIlastNametxt" promptText="Enter LastName" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="Email" textFill="#f8f8f8" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="FirstName" textFill="WHITE" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label text="LastName" textFill="WHITE" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label text="PhoneNumber" textFill="#f8f8f8" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="CPIphonenumbertxt" promptText="Enter PhoneNumber" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <Button fx:id="privacybtn" mnemonicParsing="false" onAction="#changeBio" prefHeight="75.0" prefWidth="124.0" style="-fx-background-color: #282A35;" text="Apply" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="privacybtn1" mnemonicParsing="false" onAction="#changeFirstName" prefHeight="75.0" prefWidth="124.0" style="-fx-background-color: #282A35;" text="Apply" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="privacybtn11" mnemonicParsing="false" onAction="#changeLastName" prefHeight="75.0" prefWidth="124.0" style="-fx-background-color: #282A35;" text="Apply" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="privacybtn111" mnemonicParsing="false" onAction="#changeEmail" prefHeight="75.0" prefWidth="124.0" style="-fx-background-color: #282A35;" text="Apply" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="privacybtn112" mnemonicParsing="false" onAction="#changePhoneNumber" prefHeight="75.0" prefWidth="124.0" style="-fx-background-color: #282A35;" text="Apply" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <DatePicker fx:id="CPIbirthdayDtPicker" prefHeight="34.0" prefWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Birthday" textFill="#f8f8f8" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Button fx:id="privacybtn1121" mnemonicParsing="false" onAction="#changeDateTime" prefHeight="55.0" prefWidth="123.0" style="-fx-background-color: #282A35;" text="Apply" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Label fx:id="CPIlbl" layoutX="415.0" layoutY="32.0" />
+   </children>
+</AnchorPane>

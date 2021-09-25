@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <children>
+      <VBox layoutY="54.0" opacity="0.87" prefHeight="646.0" prefWidth="148.0" style="-fx-background-color: #282A35;">
+         <children>
+            <Button fx:id="viewListbtn" mnemonicParsing="false" onAction="#goToViewListTab" prefHeight="73.0" prefWidth="151.0" style="-fx-background-color: #282A35;" text="ViewLists" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="myTweetbtn" mnemonicParsing="false" onAction="#goToMyTweetTab" prefHeight="76.0" prefWidth="147.0" style="-fx-background-color: #282A35;" text="MyTweets" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="CPIbtn" mnemonicParsing="false" onAction="#goToChangePersonalInfoTab" prefHeight="76.0" prefWidth="147.0" style="-fx-background-color: #282A35;" text="ChangePersonalInfo" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="Notifbtn" mnemonicParsing="false" onAction="#goToNotificationtab" prefHeight="76.0" prefWidth="151.0" style="-fx-background-color: #282A35;" text="Notification" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Infobtn" mnemonicParsing="false" onAction="#goToInfoTab" prefHeight="76.0" prefWidth="148.0" style="-fx-background-color: #282A35;" text="Info" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <ToolBar opacity="0.82" prefHeight="11.0" prefWidth="1011.0" style="-fx-background-color: #282A35;">
+         <items>
+            <Button mnemonicParsing="false" onAction="#backToHome" prefHeight="40.0" prefWidth="87.0" style="-fx-background-color: #282A35;" text="back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label text="MainPage" textFill="WHITE">
+               <padding>
+                  <Insets left="400.0" />
+               </padding>
+            </Label>
+         </items>
+      </ToolBar>
+      <AnchorPane fx:id="gb" layoutX="148.0" layoutY="54.0" prefHeight="646.0" prefWidth="864.0" />
+   </children>
+</AnchorPane>

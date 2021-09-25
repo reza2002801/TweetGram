@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="647.0" style="-fx-background-radius: 12 12 12 12; -fx-background-color: #282a35;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MyTweetComponentController">
+   <children>
+      <Circle fx:id="Cr" fill="DODGERBLUE" layoutX="51.0" layoutY="49.0" radius="40.0" stroke="DODGERBLUE" strokeType="INSIDE" />
+      <Label fx:id="Namelbl" layoutX="105.0" layoutY="11.0" text="FamilyName  @UserName . Date" textFill="WHITE" />
+      <Label fx:id="txtlbl" layoutX="106.0" layoutY="44.0" text="Tweet Text" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="likebtn" layoutX="421.0" layoutY="82.0" mnemonicParsing="false" onAction="#likeTweet" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #1e90ff;" text="Like" textFill="WHITE" AnchorPane.bottomAnchor="5.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="496.0" layoutY="82.0" mnemonicParsing="false" onAction="#forwardTweet" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #1e90ff;" text="Forward" textFill="WHITE" AnchorPane.bottomAnchor="5.0">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="570.0" layoutY="82.0" mnemonicParsing="false" onAction="#showLikedUser" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #1e90ff;" text="LikedUser" textFill="WHITE" AnchorPane.bottomAnchor="5.0">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <Button layoutX="344.0" layoutY="82.0" mnemonicParsing="false" onAction="#seeComments" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: #1e90ff;" text="Comments" textFill="WHITE" AnchorPane.bottomAnchor="5.0">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <Label fx:id="ReTweetlbl" layoutX="419.0" layoutY="11.0" text="Retweeted " textFill="WHITE" />
+      <Button layoutX="266.0" layoutY="82.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: #1e90ff;" text="Mute" textFill="WHITE" AnchorPane.bottomAnchor="5.0">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="retweetbtn" layoutX="188.0" layoutY="82.0" mnemonicParsing="false" onAction="#RetweetTweet" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: #1e90ff;" text="ReTweet" textFill="WHITE" AnchorPane.bottomAnchor="5.0">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <Button layoutX="106.0" layoutY="82.0" mnemonicParsing="false" onAction="#reportTweet" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: #1e90ff;" text="Report" textFill="WHITE" AnchorPane.bottomAnchor="5.0">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

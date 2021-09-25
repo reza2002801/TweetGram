@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="646.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MakeCategoryTabController">
+   <children>
+      <AnchorPane layoutX="39.0" layoutY="21.0" prefHeight="245.0" prefWidth="661.0" style="-fx-background-color: #282A35; -fx-background-radius: 15 15 15 15;">
+         <children>
+            <TextField fx:id="userNametxt" layoutX="38.0" layoutY="73.0" prefHeight="23.0" prefWidth="403.0" promptText="Enter UserName..." />
+            <Button layoutX="471.0" layoutY="73.0" mnemonicParsing="false" onAction="#addUser" style="-fx-background-color: #1e90ff;" text="Add To Category" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="393.0" layoutY="184.0" mnemonicParsing="false" onAction="#Discard" style="-fx-background-color: #1e90ff;" text="Discard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="493.0" layoutY="184.0" mnemonicParsing="false" onAction="#saveCategory" style="-fx-background-color: #1e90ff;" text="SaveCategory" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="catNametxt" layoutX="38.0" layoutY="26.0" prefHeight="23.0" prefWidth="403.0" promptText="CategoryName..." />
+            <Label fx:id="userlbl" layoutX="38.0" layoutY="123.0" text="Users : " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

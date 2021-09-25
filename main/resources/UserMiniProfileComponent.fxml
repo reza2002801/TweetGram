@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aap" opacity="0.89" prefHeight="100.0" prefWidth="470.0" style="-fx-background-color: #282A35; -fx-background-radius: 25 25 25 25;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserMiniProfileComponentController">
+   <children>
+      <Circle fx:id="profilecircle" fill="DODGERBLUE" layoutX="50.0" layoutY="50.0" radius="50.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <Label fx:id="u" layoutX="144.0" layoutY="23.0" onMouseClicked="#goToProfile" text="UserName" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="f" layoutX="144.0" layoutY="61.0" text="FullName" textFill="#f8f8f8" />
+   </children>
+</AnchorPane>

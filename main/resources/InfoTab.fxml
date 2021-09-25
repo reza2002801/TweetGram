@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="InfoLastNamelbl" prefHeight="646.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InfoTabController">
+   <children>
+      <Circle fx:id="profileFrame" fill="#282a35" layoutX="126.0" layoutY="125.0" radius="79.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="198.0" layoutY="125.0" text="___________________________________________________">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoUserNamelbl" layoutX="171.0" layoutY="231.0" text="UserName : ">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoEmaillbl" layoutX="171.0" layoutY="281.0" text="Email Address : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoFirstNamelbl" layoutX="171.0" layoutY="332.0" text="FirstName : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoLastNamelbl" layoutX="171.0" layoutY="381.0" text="LastName : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoBirthdaylbl" layoutX="171.0" layoutY="431.0" text="Birthday : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoBiolbl" layoutX="171.0" layoutY="479.0" text="Bio : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoPhoneNumberlbl" layoutX="171.0" layoutY="523.0" text="PhoneNumber : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="646.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PrivacySubPageController">
+   <children>
+      <MenuButton fx:id="lastseenmb" layoutX="254.0" layoutY="129.0" mnemonicParsing="false" opacity="0.88" prefHeight="74.0" prefWidth="435.0" style="-fx-background-color: #282A35;" text="LastSeen" textFill="WHITE">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#setLastSeenEnable" style="-fx-background-color: #ffffff;" text="Enable" />
+          <MenuItem mnemonicParsing="false" onAction="#setLastSeenDisable" text="Disable" />
+        </items>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </MenuButton>
+      <MenuButton fx:id="activationmb" layoutX="254.0" layoutY="289.0" mnemonicParsing="false" opacity="0.88" prefHeight="74.0" prefWidth="435.0" style="-fx-background-color: #282A35;" text="AccountActiveStatue" textFill="WHITE">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#setIsActiveEnable" text="Enable" />
+            <MenuItem mnemonicParsing="false" onAction="#setIsActiveDisable" text="Disable" />
+         </items>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </MenuButton>
+      <MenuButton fx:id="privacymb" layoutX="254.0" layoutY="443.0" mnemonicParsing="false" opacity="0.88" prefHeight="74.0" prefWidth="435.0" style="-fx-background-color: #282A35;" text="PrivacyStatue" textFill="WHITE">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#setPublicAccountEnable" text="Enable" />
+            <MenuItem mnemonicParsing="false" onAction="#setPublicAccountDisable" text="Disable" />
+         </items>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </MenuButton>
+      <Label layoutX="130.0" layoutY="147.0" text="LastSeen" textFill="#282a35">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="310.0" text="AccountActiveStatue" textFill="#282a35">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="461.0" text="PrivacyStatue">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

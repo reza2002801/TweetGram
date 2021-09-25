@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="646.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GroupChatTabController">
+   <children>
+      <VBox layoutX="729.0" opacity="0.87" prefHeight="646.0" prefWidth="141.0" style="-fx-background-color: #282A35;">
+         <children>
+            <Button fx:id="personalChatbtn" mnemonicParsing="false" onAction="#goToCategoryListView" prefHeight="73.0" prefWidth="143.0" style="-fx-background-color: #282A35;" text="Categories" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="groupChatbtn" mnemonicParsing="false" onAction="#goToMakeCategoryTab" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: #282A35;" text="MakeCategory" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="groupChatbtn2" mnemonicParsing="false" onAction="#goToManualChooseTab" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: #282A35;" text="ChooseManual" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="groupChatbtn3" mnemonicParsing="false" onAction="#goToSendToAllTab" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: #282A35;" text="SendToAll" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="groupChatbtn31" mnemonicParsing="false" onAction="#goToGroupChatTab" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: #282A35;" text="Groups" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="groupChatbtn311" mnemonicParsing="false" onAction="#goToGroupMakingTab" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: #282A35;" text="Make a Group" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="ap" prefHeight="640.0" prefWidth="731.0" />
+   </children>
+</AnchorPane>

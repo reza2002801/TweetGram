@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane fx:id="sp" dividerPositions="0.0061162079510703364" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#disApear" orientation="VERTICAL" prefHeight="646.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CommentSubPageController">
+  <items>
+      <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#disApear" prefHeight="584.0" prefWidth="912.0">
+         <content>
+            <AnchorPane fx:id="ap" prefHeight="579.0" prefWidth="908.0">
+               <children>
+                  <GridPane fx:id="gp" layoutX="92.0" prefHeight="94.0" prefWidth="682.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #282a35;">
+         <children>
+            <TextField fx:id="Messagetxt" layoutX="14.0" layoutY="11.0" prefHeight="20.0" prefWidth="793.0" promptText="Write a comment..." />
+            <Button layoutX="825.0" layoutY="11.0" mnemonicParsing="false" onAction="#addComment" style="-fx-background-color: #1e90ff;" text="Send" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
